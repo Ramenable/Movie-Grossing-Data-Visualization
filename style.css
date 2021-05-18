@@ -1,0 +1,123 @@
+.axis-label {
+    text-anchor: middle;
+    font-size: 12px;
+    font-weight: semibold;
+}
+
+body {
+    font-family: "Open Sans";
+    margin: 0;
+}
+
+#main {
+    margin: 10px 20px;
+}
+
+text.label {
+    text-anchor: middle;
+    font-size: 11px;
+    fill: #555;
+    font-family: sans-serif;
+}
+
+.axis text {
+    fill: #555;
+}
+
+.axis line,
+.axis path {
+    stroke: #555;
+}
+
+text.title {
+    text-anchor: middle;
+    font-size: 14px;
+    fill: #333;
+}
+
+g circle {
+    fill: #00008b;
+    opacity: 0.4;
+}
+
+g:hover circle {
+    opacity: 1;
+}
+
+g .label {
+    opacity: 0;
+}
+
+g:hover .label {
+    opacity: 1;
+}
+
+html {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+  
+h1 {
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+  
+.rings {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+}
+  
+.percent1, .circ, circle {
+    width: 200px;
+    height: 200px;
+}
+  
+.circ {
+    position: absolute;
+    fill: none;
+    stroke-width: 10;
+    transform: translate(10px, 10px);
+    stroke-dasharray: 440;
+    stroke-linecap: round;
+}
+  
+.circ:nth-child(1) {
+    stroke-dashoffset: 0;
+    stroke: #424242;
+}
+  
+.percent1 circle:nth-child(2) {
+    /* stroke: salmon; */
+    animation: percent 1.5s linear;
+}
+  
+.number {
+    position: relative;
+    bottom: 140px;
+    right: -32px;
+    color: #fff;
+}
+  
+h2 {
+    font-size: 24px;
+    color: #424242;
+}
+  
+span {
+    font-size: 24px;
+    opacity: .7;
+}
+  
+.percent1 span {
+    color: black;
+}
+  
+@keyframes percent {
+    0% {
+      stroke-dashoffset: 0;
+      stroke-width: 0;
+    }
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab 7 - Movie Grossings</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="main">
+        <svg width="1400" height="700" style="border: 1px solid #777;">
+        </svg>
+        <div>
+            <label for="categorySelect">Show: </label>
+            <select class="custom-select" id="categorySelect" onchange="onCategoryChanged()">
+              <option selected value="all-genres">All Genres</option>
+              <option value="Action">Action</option>
+              <option value="Adventure">Adventure</option>
+              <option value="Animation">Animation</option>
+              <option value="Biography">Biography</option>
+              <option value="Comedy">Comedy</option>
+              <option value="Crime">Crime</option>
+              <option value="Documentary">Documentary</option>
+              <option value="Drama">Drama</option>
+              <option value="Family">Family</option>
+              <option value="Fantasy">Fantasy</option>
+              <option value="Horror">Horror</option>
+              <option value="Music">Music</option>
+              <option value="Musical">Musical</option>
+              <option value="Mystery">Mystery</option>
+              <option value="Romance">Romance</option>
+              <option value="Sci-Fi">Sci-Fi</option>
+              <option value="Sport">Sport</option>
+              <option value="Thriller">Thriller</option>
+              <option value="War">War</option>
+              <option value="Western">Western</option>
+            </select>
+            <br></br>
+            <label for="zoom tip">Zoom Tips:</label>
+            <label for="zoom tip"> 1) Double Click to Zoom In</label>
+            <label for="zoom tip"> 2) Pinch to Zoom Out</label>
+        </div>
+    </div>
+</body>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script src="./main.js"></script>
+</html>
