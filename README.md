@@ -1,1 +1,0 @@
-# Movie-Grossing-Data-Visualization

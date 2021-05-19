@@ -123,7 +123,8 @@ var gX = svg.append('g').attr('class', 'x axis')
 
 svg.append('text')
     .attr('class', 'label')
-    .attr('transform','translate(730,685)')
+    .attr('transform','translate(680,685)')
+    .attr('font-family', 'Roboto')
     .style('font-size', '14')
     .text('Movie Budget ($)');
 
@@ -133,13 +134,15 @@ var gY = svg.append('g').attr('class', 'y axis')
 
 svg.append('text')
     .attr('class', 'label')
-    .attr('transform','translate(15,300) rotate(90)')
+    .attr('transform','translate(15,270) rotate(90)')
+    .attr('font-family', 'Roboto')
     .style('font-size', '14')
     .text('Movie Grossing ($)');
 
 svg.append('text')
     .attr('class', 'title')
-    .attr('transform','translate(730,30)')
+    .attr('transform','translate(590,30)')
+    .attr('font-family', 'Roboto')
     .style('font-size', '20')
     .style('font-weight', 'bold')
     .text('What Kind of Movies Make Money?');
